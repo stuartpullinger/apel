@@ -30,7 +30,8 @@ from apel.db.records import BlahdRecord, \
                             ProcessedRecord, \
                             StorageRecord, \
                             SummaryRecord, \
-                            SyncRecord
+                            SyncRecord, \
+                            StorageRecord
 import MySQLdb.cursors
 import datetime
 import logging
@@ -53,7 +54,8 @@ class ApelMysqlDb(object):
                     CloudSummaryRecord : 'VCloudSummaries',
                     NormalisedSummaryRecord : 'VNormalisedSummaries',
                     ProcessedRecord : 'VProcessedFiles',
-                    SummaryRecord : 'VSummaries'}
+                    SummaryRecord : 'VSummaries',
+                    StorageRecord: 'VAnonStarRecords'}
     
     # These simply need to have the same number of arguments as the stored procedures defined in the database schemas.
     INSERT_PROCEDURES = {
