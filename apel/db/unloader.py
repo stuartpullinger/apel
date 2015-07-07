@@ -48,7 +48,7 @@ class DbUnloader(object):
                     'VNormalisedSuperSummaries': NormalisedSummaryRecord,
                     'VSyncRecords': SyncRecord,
                     'VCloudRecords': CloudRecord,
-                    'VCloudSummaries': CloudSummaryRecord
+                    'VCloudSummaries': CloudSummaryRecord,
                     'VAnonStarRecords': StorageRecord}
 
     # all record types for which withholding DNs is a valid option
