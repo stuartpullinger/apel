@@ -100,7 +100,7 @@ class StorageRecord(Record):
         '''
         
         doc = Document()
-        ur = doc.createElement('sr:StorageRecord')
+        ur = doc.createElement('sr:StorageUsageRecord')
         
         record_id = self.get_field('RecordId')
 	rec_id = doc.createElement('sr:RecordIdentity')

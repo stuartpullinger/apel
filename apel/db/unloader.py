@@ -241,7 +241,7 @@ class DbUnloader(object):
         elif type(records[0]) == StorageRecord:
             XML_HEADER = '<?xml version="1.0" ?>'
             UR_OPEN = ('<sr:StorageUsageRecords xmlns:sr="http://eu-emi.eu/namespaces/2011/02/storagerecord">')
-            UR_CLOSE = '</sr:StorageRecords>'
+            UR_CLOSE = '</sr:StorageUsageRecords>'
         else:
             raise ApelDbException('Can only send URs for JobRecords and StorageRecords.')
             
