@@ -49,7 +49,7 @@ class DbUnloader(object):
                     'VSyncRecords': SyncRecord,
                     'VCloudRecords': CloudRecord,
                     'VCloudSummaries': CloudSummaryRecord,
-                    'VAnonStarRecords': StorageRecord}
+                    'VStarRecords': StorageRecord}
 
     # all record types for which withholding DNs is a valid option
     MAY_WITHHOLD_DNS = [JobRecord, SyncRecord, CloudRecord]
