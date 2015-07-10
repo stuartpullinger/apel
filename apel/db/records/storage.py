@@ -16,7 +16,8 @@
 @author Will Rogers
 '''
 
-import datetime, time
+from datetime import datetime
+import time
 from apel.db.records import Record
 from xml.dom.minidom import Document
 
